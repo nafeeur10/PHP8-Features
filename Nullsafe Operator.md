@@ -97,5 +97,5 @@ echo $customer?->getAddress()?->getCountry()?->getCountryName();
 আশা করি বিষয়টা পরিষ্কার হয়েছে। 
 
 Ref: 
-https://wiki.php.net/rfc/nullsafe_operator
-https://php.watch/versions/8.0/null-safe-operator
+* https://wiki.php.net/rfc/nullsafe_operator
+* https://php.watch/versions/8.0/null-safe-operator
