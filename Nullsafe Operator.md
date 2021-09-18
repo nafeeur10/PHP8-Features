@@ -52,7 +52,7 @@ class profile
 
 $user = new User();
 $profile = new profile();
-echo $user?->user_token?->employment();
+echo $user?->user_token?->$profile->employment();
 ```
 
 উপরের উদাহরনে `User` এর একটা property হল `$user_token` যেটাকে আমরা `__construct()` এর মাধ্যমে initialize করেছি। ` $user?->user_token?->employment();` এই লাইনে আমরা check করতেছি `$user_token` টা NULL কি না। এই Program টা আমাকে একটা Error দিবে। 
