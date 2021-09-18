@@ -55,10 +55,10 @@ $profile = new profile();
 echo $user?->user_token?->$profile->employment();
 ```
 
-উপরের উদাহরনে `User` এর একটা property হল `$user_token` যেটাকে আমরা `__construct()` এর মাধ্যমে initialize করেছি। ` $user?->user_token?->employment();` এই লাইনে আমরা check করতেছি `$user_token` টা NULL কি না। এই Program টা আমাকে একটা Error দিবে। 
+উপরের উদাহরনে `User` এর একটা property হল `$user_token` যেটাকে আমরা `__construct()` এর মাধ্যমে initialize করেছি। `$user?->user_token?->$profile->employment();` এই লাইনে আমরা check করতেছি `$user_token` টা NULL কি না। এই Program টা আমাকে একটা Error দিবে। 
 
 ```
-Fatal error: Uncaught Error: Call to a member function employment() on string in
+Fatal error: Uncaught Error: Object of class profile could not be converted to string
 ```
 
 কারন, Nullsafe Operator এর কাজ property/method এর value null কিনা এটা check করা না। এবার নিচের আরো একটি উদাহরণের দ্বারা আমরা বিষয়টা পরিষ্কার হবো ইনশাআল্লাহ। 
