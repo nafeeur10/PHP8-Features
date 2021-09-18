@@ -61,7 +61,7 @@ echo $user?->user_token?->$profile->employment();
 Fatal error: Uncaught Error: Object of class profile could not be converted to string
 ```
 
-কারন, Nullsafe Operator এর কাজ property/method এর value null কিনা এটা check করা না। এবার নিচের আরো একটি উদাহরণের দ্বারা আমরা বিষয়টা পরিষ্কার হবো ইনশাআল্লাহ। 
+কারন, Nullsafe Operator এর কাজ property/method এর value null কিনা এটা check করা না। এটার কাজ হল, Object যদি Null না হয় তাহলে তার Property/Method Access করতে পারা। Object Null হলে আর সামনে আগাবে না। তার কোন Property/Method সে আর Access করতে পারবে না। এবার নিচের আরো একটি উদাহরণের দ্বারা আমরা বিষয়টা পরিষ্কার হবো ইনশাআল্লাহ। 
 
 ```
 class User 
